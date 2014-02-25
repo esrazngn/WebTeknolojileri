@@ -22,7 +22,7 @@ public class SendMailSSL {
   Session session = Session.getDefaultInstance(props,  
    new javax.mail.Authenticator() {  
    protected PasswordAuthentication getPasswordAuthentication() {  
-   return new PasswordAuthentication("esra.zengin@bil.omu.edu.tr","S3cr3t..");//change accordingly  
+   return new PasswordAuthentication("esra.zengin@bil.omu.edu.tr","ÅŸifreniz");//change accordingly  
    }  
   });  
    
@@ -32,7 +32,7 @@ public class SendMailSSL {
    message.setFrom(new InternetAddress("ceng.esra.55@gmail.com"));//change accordingly  
    message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));  
    message.setSubject("YemekSepetim Onay Maili");  
-   message.setText("Sipariþinizi tamamlamak için aþaðýdaki kodu doðrulama ekranýna giriniz.."
+   message.setText("Sipariï¿½inizi tamamlamak iï¿½in aï¿½aï¿½ï¿½daki kodu doï¿½rulama ekranï¿½na giriniz.."
 		   +n
 		   
 		   );  
